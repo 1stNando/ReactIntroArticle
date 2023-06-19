@@ -2,8 +2,32 @@ import React from 'react'
 
 export function App() {
   return (
-    <main>
-      <div>Hello, World </div>
-    </main>
+    <div className="all-main-content">
+      <main>
+        <article className="intro-article">
+          <h2 className="article-title">SDG Annouces Hackathon!</h2>
+          <p>
+            SDG announces the 2023 Summer Hackathon. Join us for an exciting
+            weekend.
+          </p>
+          <a className="read-more" href="#here">
+            {' '}
+            Read more about SDG Announcing Hackathon!
+          </a>
+        </article>
+
+        <article className="intro-article">
+          <h2 className="article-title">
+            Student Graduation is Right Around the Corner
+          </h2>
+          <p>
+            Our next cohort of students will be graduating in just over a week.
+          </p>
+          <a className="read-more" href="#here">
+            read more about Student Graduation is Right Around the Corner
+          </a>
+        </article>
+      </main>
+    </div>
   )
 }
