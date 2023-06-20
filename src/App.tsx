@@ -1,9 +1,12 @@
 import React from 'react'
+import { NewsArticle } from './components/NewsArticle'
 
 export function App() {
   return (
     <div className="all-main-content">
       <main>
+        <NewsArticle />
+
         <article className="intro-article">
           <h2 className="article-title">SDG Annouces Hackathon!</h2>
           <p>
