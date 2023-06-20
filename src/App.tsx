@@ -5,31 +5,20 @@ export function App() {
   return (
     <div className="all-main-content">
       <main>
-        <NewsArticle />
+        <NewsArticle
+          title="SDG Announces Hackathon!"
+          body="SDG announces the 2023 Summer Hackathon. Join us for an exciting weekend."
+        />
 
-        <article className="intro-article">
-          <h2 className="article-title">SDG Annouces Hackathon!</h2>
-          <p>
-            SDG announces the 2023 Summer Hackathon. Join us for an exciting
-            weekend.
-          </p>
-          <a className="read-more" href="#here">
-            {' '}
-            Read more about SDG Announcing Hackathon!
-          </a>
-        </article>
+        <NewsArticle
+          title="Student Graduation is Right Around the Corner"
+          body="Our next cohort of students will be graduating in just around the corner!"
+        />
 
-        <article className="intro-article">
-          <h2 className="article-title">
-            Student Graduation is Right Around the Corner
-          </h2>
-          <p>
-            Our next cohort of students will be graduating in just over a week.
-          </p>
-          <a className="read-more" href="#here">
-            read more about Student Graduation is Right Around the Corner
-          </a>
-        </article>
+        <NewsArticle
+          title="SDG Standards on React"
+          body="React is the best library for learning front end Web Development!"
+        />
       </main>
     </div>
   )
