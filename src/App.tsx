@@ -1,11 +1,19 @@
 import React from 'react'
 import { NewsArticle } from './components/NewsArticle'
+import articles from './articles.json'
 
 export function App() {
+  // console.log(articles)
+  // Transforming data into components. Using map() method. This is a VERY powerful line of code!
+  const newsArticlesFromData = articles.map((article) => (
+    <NewsArticle title={article.title} body={article.body} />
+  ))
+
   return (
     <div className="all-main-content">
       <main>
-        <NewsArticle
+        {newsArticlesFromData}
+        {/* <NewsArticle
           title="SDG Announces Hackathon!"
           body="SDG announces the 2023 Summer Hackathon. Join us for an exciting weekend."
         />
@@ -23,7 +31,7 @@ export function App() {
         <NewsArticle
           title="Wow, so cool"
           body="This makes repeating code so easy!"
-        />
+        /> */}
       </main>
     </div>
   )
