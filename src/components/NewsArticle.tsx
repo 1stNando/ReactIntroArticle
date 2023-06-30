@@ -5,7 +5,7 @@ import React from 'react'
 type NewsArticleProps = {
   title: string
   body: string
-} // Note: this could have been written inside the NewsArticle function parameter.
+} // Note: this could have been written inside the NewsArticle function parameter. Sometimes it is easier to declare the type inside it.
 
 // Export -- is so we can use this outside of this file
 // Function. PasCalCased. Returns JSX.

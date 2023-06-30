@@ -19,6 +19,11 @@ export function App() {
           title="SDG Standards on React"
           body="React is the best library for learning front end Web Development!"
         />
+
+        <NewsArticle
+          title="Wow, so cool"
+          body="This makes repeating code so easy!"
+        />
       </main>
     </div>
   )
