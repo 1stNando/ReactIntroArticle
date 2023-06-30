@@ -6,7 +6,7 @@ export function App() {
   // console.log(articles)
   // Transforming data into components. Using map() method. This is a VERY powerful line of code!
   const newsArticlesFromData = articles.map((article) => (
-    <NewsArticle title={article.title} body={article.body} />
+    <NewsArticle key={article.id} title={article.title} body={article.body} />
   ))
 
   return (
